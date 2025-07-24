@@ -12,6 +12,16 @@
         @theme{
             --font-noto-serif: "Noto Serif", "serif";
             --font-inter: "Inter", "sans-serif";
+            --animate-spin-slow: spinSlow 4s linear infinite;
+        }
+
+        @keyframes spinSlow{
+            from{
+                rotate: 0deg;
+            }
+            to{
+                rotate: 360deg;
+            }
         }
     </style>
 </head>
@@ -95,7 +105,7 @@
         <section class="max-w-285 mx-auto px-4 grid lg:grid-cols-2 gap-6 lg:gap-20 place-items-center">
             <figure class="w-full relative">
                 <img src="assets/flower-store.png" class="w-full" alt="">
-                <img src="assets/trusted-badge.png" class="max-lg:hidden absolute -top-24 -right-24 size-60" alt="">
+                <img src="assets/trusted-badge.png" class="max-lg:hidden absolute -top-24 -right-24 size-60 animate-spin-slow" alt="">
             </figure>
             <div>
                 <h2 class="font-noto-serif text-2xl lg:text-[50px] font-bold mb-3">Why Choose Our Flowers</h2>
